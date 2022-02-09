@@ -7,23 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A041F7F3784DFAF28766B47 /* Pods_Project12OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A844C89C45AECDBDBC1B22A8 /* Pods_Project12OC.framework */; };
 		A681DE4027B162F300FB429B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE3F27B162F300FB429B /* AppDelegate.swift */; };
 		A681DE4227B162F300FB429B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE4127B162F300FB429B /* SceneDelegate.swift */; };
-		A681DE4427B162F300FB429B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE4327B162F300FB429B /* ViewController.swift */; };
-		A681DE4727B162F300FB429B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A681DE4527B162F300FB429B /* Main.storyboard */; };
 		A681DE4927B162F500FB429B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A681DE4827B162F500FB429B /* Assets.xcassets */; };
-		A681DE4C27B162F500FB429B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A681DE4A27B162F500FB429B /* LaunchScreen.storyboard */; };
+		A681DE6027B1638500FB429B /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5427B1638500FB429B /* SideMenuViewController.swift */; };
+		A681DE6127B1638500FB429B /* StreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5527B1638500FB429B /* StreamCollectionViewCell.swift */; };
+		A681DE6227B1638500FB429B /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5627B1638500FB429B /* StreamViewController.swift */; };
+		A681DE6327B1638500FB429B /* YoutubeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5727B1638500FB429B /* YoutubeHeaderView.swift */; };
+		A681DE6427B1638500FB429B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5827B1638500FB429B /* HomeViewController.swift */; };
+		A681DE6527B1638500FB429B /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5927B1638500FB429B /* SongViewController.swift */; };
+		A681DE6627B1638500FB429B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5A27B1638500FB429B /* ContainerViewController.swift */; };
+		A681DE6727B1638500FB429B /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5B27B1638500FB429B /* VideoViewController.swift */; };
+		A681DE6827B1638500FB429B /* YoutubeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5C27B1638500FB429B /* YoutubeTableViewCell.swift */; };
+		A681DE6927B1638500FB429B /* InstagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5D27B1638500FB429B /* InstagramTableViewCell.swift */; };
+		A681DE6B27B1638500FB429B /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5F27B1638500FB429B /* InstagramViewController.swift */; };
+		A681DE7B27B1638F00FB429B /* YoutubeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE6D27B1638F00FB429B /* YoutubeProvider.swift */; };
+		A681DE7C27B1638F00FB429B /* YoutubeCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE6E27B1638F00FB429B /* YoutubeCodable.swift */; };
+		A681DE7D27B1638F00FB429B /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE6F27B1638F00FB429B /* APIKeys.swift */; };
+		A681DE7E27B1638F00FB429B /* InstagramIDPicturesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7027B1638F00FB429B /* InstagramIDPicturesProvider.swift */; };
+		A681DE7F27B1638F00FB429B /* YoutubeVODProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7127B1638F00FB429B /* YoutubeVODProvider.swift */; };
+		A681DE8027B1638F00FB429B /* InstagramCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7227B1638F00FB429B /* InstagramCodable.swift */; };
+		A681DE8127B1638F00FB429B /* InstagramDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7327B1638F00FB429B /* InstagramDelegateProtocol.swift */; };
+		A681DE8227B1638F00FB429B /* YoutubeShortProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7427B1638F00FB429B /* YoutubeShortProvider.swift */; };
+		A681DE8327B1638F00FB429B /* InstagramIDPicturesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7527B1638F00FB429B /* InstagramIDPicturesConverter.swift */; };
+		A681DE8427B1638F00FB429B /* YoutubeVODConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7627B1638F00FB429B /* YoutubeVODConverter.swift */; };
+		A681DE8527B1638F00FB429B /* InstagramDetailsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7727B1638F00FB429B /* InstagramDetailsProvider.swift */; };
+		A681DE8627B1638F00FB429B /* InstagramDetailsConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7827B1638F00FB429B /* InstagramDetailsConverter.swift */; };
+		A681DE8727B1639000FB429B /* YoutubeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7927B1638F00FB429B /* YoutubeConverter.swift */; };
+		A681DE8827B1639000FB429B /* YoutubeShortConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7A27B1638F00FB429B /* YoutubeShortConverter.swift */; };
+		A681DE8D27B1639700FB429B /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE8A27B1639700FB429B /* UIImageView+Extensions.swift */; };
+		A681DE8E27B1639700FB429B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE8B27B1639700FB429B /* Date+Extensions.swift */; };
+		A681DE8F27B1639700FB429B /* MyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE8C27B1639700FB429B /* MyCollectionViewFlowLayout.swift */; };
+		A681DEA027B163DB00FB429B /* SongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9227B163DB00FB429B /* SongViewController.xib */; };
+		A681DEA127B163DB00FB429B /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9327B163DB00FB429B /* ContainerViewController.xib */; };
+		A681DEA227B163DB00FB429B /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9427B163DB00FB429B /* VideoViewController.xib */; };
+		A681DEA327B163DB00FB429B /* InstagramTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9527B163DB00FB429B /* InstagramTableViewCell.xib */; };
+		A681DEA427B163DB00FB429B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9627B163DB00FB429B /* HomeViewController.xib */; };
+		A681DEA527B163DB00FB429B /* StreamCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9727B163DB00FB429B /* StreamCollectionViewCell.xib */; };
+		A681DEA627B163DB00FB429B /* YoutubeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9827B163DB00FB429B /* YoutubeHeaderView.xib */; };
+		A681DEA727B163DB00FB429B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9927B163DB00FB429B /* LaunchScreen.storyboard */; };
+		A681DEA827B163DB00FB429B /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9B27B163DB00FB429B /* SideMenuViewController.xib */; };
+		A681DEA927B163DB00FB429B /* YoutubeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9C27B163DB00FB429B /* YoutubeTableViewCell.xib */; };
+		A681DEAA27B163DB00FB429B /* InstagramViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9D27B163DB00FB429B /* InstagramViewController.xib */; };
+		A681DEAB27B163DB00FB429B /* StreamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9E27B163DB00FB429B /* StreamViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1459EE95E64AB4C319EECB68 /* Pods-Project12OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project12OC.release.xcconfig"; path = "Target Support Files/Pods-Project12OC/Pods-Project12OC.release.xcconfig"; sourceTree = "<group>"; };
 		A681DE3C27B162F300FB429B /* Project12OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project12OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A681DE3F27B162F300FB429B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A681DE4127B162F300FB429B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A681DE4327B162F300FB429B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A681DE4627B162F300FB429B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A681DE4827B162F500FB429B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A681DE4B27B162F500FB429B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A681DE4D27B162F500FB429B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A681DE5427B1638500FB429B /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		A681DE5527B1638500FB429B /* StreamCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCollectionViewCell.swift; sourceTree = "<group>"; };
+		A681DE5627B1638500FB429B /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		A681DE5727B1638500FB429B /* YoutubeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeHeaderView.swift; sourceTree = "<group>"; };
+		A681DE5827B1638500FB429B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A681DE5927B1638500FB429B /* SongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		A681DE5A27B1638500FB429B /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		A681DE5B27B1638500FB429B /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		A681DE5C27B1638500FB429B /* YoutubeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeTableViewCell.swift; sourceTree = "<group>"; };
+		A681DE5D27B1638500FB429B /* InstagramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableViewCell.swift; sourceTree = "<group>"; };
+		A681DE5F27B1638500FB429B /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		A681DE6D27B1638F00FB429B /* YoutubeProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeProvider.swift; sourceTree = "<group>"; };
+		A681DE6E27B1638F00FB429B /* YoutubeCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeCodable.swift; sourceTree = "<group>"; };
+		A681DE6F27B1638F00FB429B /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		A681DE7027B1638F00FB429B /* InstagramIDPicturesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramIDPicturesProvider.swift; sourceTree = "<group>"; };
+		A681DE7127B1638F00FB429B /* YoutubeVODProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVODProvider.swift; sourceTree = "<group>"; };
+		A681DE7227B1638F00FB429B /* InstagramCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramCodable.swift; sourceTree = "<group>"; };
+		A681DE7327B1638F00FB429B /* InstagramDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDelegateProtocol.swift; sourceTree = "<group>"; };
+		A681DE7427B1638F00FB429B /* YoutubeShortProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeShortProvider.swift; sourceTree = "<group>"; };
+		A681DE7527B1638F00FB429B /* InstagramIDPicturesConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramIDPicturesConverter.swift; sourceTree = "<group>"; };
+		A681DE7627B1638F00FB429B /* YoutubeVODConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVODConverter.swift; sourceTree = "<group>"; };
+		A681DE7727B1638F00FB429B /* InstagramDetailsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDetailsProvider.swift; sourceTree = "<group>"; };
+		A681DE7827B1638F00FB429B /* InstagramDetailsConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDetailsConverter.swift; sourceTree = "<group>"; };
+		A681DE7927B1638F00FB429B /* YoutubeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeConverter.swift; sourceTree = "<group>"; };
+		A681DE7A27B1638F00FB429B /* YoutubeShortConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeShortConverter.swift; sourceTree = "<group>"; };
+		A681DE8A27B1639700FB429B /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		A681DE8B27B1639700FB429B /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		A681DE8C27B1639700FB429B /* MyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		A681DE9227B163DB00FB429B /* SongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongViewController.xib; sourceTree = "<group>"; };
+		A681DE9327B163DB00FB429B /* ContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
+		A681DE9427B163DB00FB429B /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		A681DE9527B163DB00FB429B /* InstagramTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstagramTableViewCell.xib; sourceTree = "<group>"; };
+		A681DE9627B163DB00FB429B /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A681DE9727B163DB00FB429B /* StreamCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreamCollectionViewCell.xib; sourceTree = "<group>"; };
+		A681DE9827B163DB00FB429B /* YoutubeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YoutubeHeaderView.xib; sourceTree = "<group>"; };
+		A681DE9A27B163DB00FB429B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A681DE9B27B163DB00FB429B /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
+		A681DE9C27B163DB00FB429B /* YoutubeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YoutubeTableViewCell.xib; sourceTree = "<group>"; };
+		A681DE9D27B163DB00FB429B /* InstagramViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstagramViewController.xib; sourceTree = "<group>"; };
+		A681DE9E27B163DB00FB429B /* StreamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreamViewController.xib; sourceTree = "<group>"; };
+		A844C89C45AECDBDBC1B22A8 /* Pods_Project12OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project12OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEAE0CD876734A87D51D08B9 /* Pods-Project12OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project12OC.debug.xcconfig"; path = "Target Support Files/Pods-Project12OC/Pods-Project12OC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +109,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A041F7F3784DFAF28766B47 /* Pods_Project12OC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		707171D8682128E97B65AB65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE0CD876734A87D51D08B9 /* Pods-Project12OC.debug.xcconfig */,
+				1459EE95E64AB4C319EECB68 /* Pods-Project12OC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A681DE3327B162F300FB429B = {
 			isa = PBXGroup;
 			children = (
 				A681DE3E27B162F300FB429B /* Project12OC */,
 				A681DE3D27B162F300FB429B /* Products */,
+				707171D8682128E97B65AB65 /* Pods */,
+				A7137AE007DE9AF473261DB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +146,100 @@
 		A681DE3E27B162F300FB429B /* Project12OC */ = {
 			isa = PBXGroup;
 			children = (
-				A681DE3F27B162F300FB429B /* AppDelegate.swift */,
-				A681DE4127B162F300FB429B /* SceneDelegate.swift */,
-				A681DE4327B162F300FB429B /* ViewController.swift */,
-				A681DE4527B162F300FB429B /* Main.storyboard */,
-				A681DE4827B162F500FB429B /* Assets.xcassets */,
-				A681DE4A27B162F500FB429B /* LaunchScreen.storyboard */,
 				A681DE4D27B162F500FB429B /* Info.plist */,
+				A681DE8927B1639700FB429B /* Shared */,
+				A681DEAC27B1710200FB429B /* Supporting files */,
+				A681DE9027B163DB00FB429B /* View */,
+				A681DE5327B1638500FB429B /* Controller */,
+				A681DE6C27B1638F00FB429B /* Model */,
 			);
 			path = Project12OC;
+			sourceTree = "<group>";
+		};
+		A681DE5327B1638500FB429B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A681DE5427B1638500FB429B /* SideMenuViewController.swift */,
+				A681DE5527B1638500FB429B /* StreamCollectionViewCell.swift */,
+				A681DE5627B1638500FB429B /* StreamViewController.swift */,
+				A681DE5727B1638500FB429B /* YoutubeHeaderView.swift */,
+				A681DE5827B1638500FB429B /* HomeViewController.swift */,
+				A681DE5927B1638500FB429B /* SongViewController.swift */,
+				A681DE5A27B1638500FB429B /* ContainerViewController.swift */,
+				A681DE5B27B1638500FB429B /* VideoViewController.swift */,
+				A681DE5C27B1638500FB429B /* YoutubeTableViewCell.swift */,
+				A681DE5D27B1638500FB429B /* InstagramTableViewCell.swift */,
+				A681DE5F27B1638500FB429B /* InstagramViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A681DE6C27B1638F00FB429B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A681DE6D27B1638F00FB429B /* YoutubeProvider.swift */,
+				A681DE6E27B1638F00FB429B /* YoutubeCodable.swift */,
+				A681DE6F27B1638F00FB429B /* APIKeys.swift */,
+				A681DE7027B1638F00FB429B /* InstagramIDPicturesProvider.swift */,
+				A681DE7127B1638F00FB429B /* YoutubeVODProvider.swift */,
+				A681DE7227B1638F00FB429B /* InstagramCodable.swift */,
+				A681DE7327B1638F00FB429B /* InstagramDelegateProtocol.swift */,
+				A681DE7427B1638F00FB429B /* YoutubeShortProvider.swift */,
+				A681DE7527B1638F00FB429B /* InstagramIDPicturesConverter.swift */,
+				A681DE7627B1638F00FB429B /* YoutubeVODConverter.swift */,
+				A681DE7727B1638F00FB429B /* InstagramDetailsProvider.swift */,
+				A681DE7827B1638F00FB429B /* InstagramDetailsConverter.swift */,
+				A681DE7927B1638F00FB429B /* YoutubeConverter.swift */,
+				A681DE7A27B1638F00FB429B /* YoutubeShortConverter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A681DE8927B1639700FB429B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A681DE8A27B1639700FB429B /* UIImageView+Extensions.swift */,
+				A681DE8B27B1639700FB429B /* Date+Extensions.swift */,
+				A681DE8C27B1639700FB429B /* MyCollectionViewFlowLayout.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A681DE9027B163DB00FB429B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A681DE9227B163DB00FB429B /* SongViewController.xib */,
+				A681DE9327B163DB00FB429B /* ContainerViewController.xib */,
+				A681DE9427B163DB00FB429B /* VideoViewController.xib */,
+				A681DE9527B163DB00FB429B /* InstagramTableViewCell.xib */,
+				A681DE9627B163DB00FB429B /* HomeViewController.xib */,
+				A681DE9727B163DB00FB429B /* StreamCollectionViewCell.xib */,
+				A681DE9827B163DB00FB429B /* YoutubeHeaderView.xib */,
+				A681DE9927B163DB00FB429B /* LaunchScreen.storyboard */,
+				A681DE9B27B163DB00FB429B /* SideMenuViewController.xib */,
+				A681DE9C27B163DB00FB429B /* YoutubeTableViewCell.xib */,
+				A681DE9D27B163DB00FB429B /* InstagramViewController.xib */,
+				A681DE9E27B163DB00FB429B /* StreamViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A681DEAC27B1710200FB429B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				A681DE3F27B162F300FB429B /* AppDelegate.swift */,
+				A681DE4127B162F300FB429B /* SceneDelegate.swift */,
+				A681DE4827B162F500FB429B /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		A7137AE007DE9AF473261DB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A844C89C45AECDBDBC1B22A8 /* Pods_Project12OC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A681DE5027B162F500FB429B /* Build configuration list for PBXNativeTarget "Project12OC" */;
 			buildPhases = (
+				6E20F56974D2742E574C348D /* [CP] Check Pods Manifest.lock */,
 				A681DE3827B162F300FB429B /* Sources */,
 				A681DE3927B162F300FB429B /* Frameworks */,
 				A681DE3A27B162F300FB429B /* Resources */,
+				52C6C2E12130D42537835D1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +302,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A681DE4C27B162F500FB429B /* LaunchScreen.storyboard in Resources */,
+				A681DEA527B163DB00FB429B /* StreamCollectionViewCell.xib in Resources */,
+				A681DEAA27B163DB00FB429B /* InstagramViewController.xib in Resources */,
+				A681DEA827B163DB00FB429B /* SideMenuViewController.xib in Resources */,
+				A681DEAB27B163DB00FB429B /* StreamViewController.xib in Resources */,
+				A681DEA227B163DB00FB429B /* VideoViewController.xib in Resources */,
 				A681DE4927B162F500FB429B /* Assets.xcassets in Resources */,
-				A681DE4727B162F300FB429B /* Main.storyboard in Resources */,
+				A681DEA627B163DB00FB429B /* YoutubeHeaderView.xib in Resources */,
+				A681DEA127B163DB00FB429B /* ContainerViewController.xib in Resources */,
+				A681DEA927B163DB00FB429B /* YoutubeTableViewCell.xib in Resources */,
+				A681DEA327B163DB00FB429B /* InstagramTableViewCell.xib in Resources */,
+				A681DEA027B163DB00FB429B /* SongViewController.xib in Resources */,
+				A681DEA727B163DB00FB429B /* LaunchScreen.storyboard in Resources */,
+				A681DEA427B163DB00FB429B /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52C6C2E12130D42537835D1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project12OC/Pods-Project12OC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project12OC/Pods-Project12OC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project12OC/Pods-Project12OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E20F56974D2742E574C348D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project12OC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A681DE3827B162F300FB429B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A681DE4427B162F300FB429B /* ViewController.swift in Sources */,
+				A681DE8D27B1639700FB429B /* UIImageView+Extensions.swift in Sources */,
+				A681DE7F27B1638F00FB429B /* YoutubeVODProvider.swift in Sources */,
+				A681DE8127B1638F00FB429B /* InstagramDelegateProtocol.swift in Sources */,
+				A681DE8527B1638F00FB429B /* InstagramDetailsProvider.swift in Sources */,
+				A681DE7C27B1638F00FB429B /* YoutubeCodable.swift in Sources */,
+				A681DE8327B1638F00FB429B /* InstagramIDPicturesConverter.swift in Sources */,
+				A681DE6027B1638500FB429B /* SideMenuViewController.swift in Sources */,
+				A681DE6327B1638500FB429B /* YoutubeHeaderView.swift in Sources */,
+				A681DE8027B1638F00FB429B /* InstagramCodable.swift in Sources */,
+				A681DE8E27B1639700FB429B /* Date+Extensions.swift in Sources */,
+				A681DE6627B1638500FB429B /* ContainerViewController.swift in Sources */,
+				A681DE6927B1638500FB429B /* InstagramTableViewCell.swift in Sources */,
+				A681DE8727B1639000FB429B /* YoutubeConverter.swift in Sources */,
+				A681DE8827B1639000FB429B /* YoutubeShortConverter.swift in Sources */,
+				A681DE8227B1638F00FB429B /* YoutubeShortProvider.swift in Sources */,
+				A681DE6127B1638500FB429B /* StreamCollectionViewCell.swift in Sources */,
+				A681DE6427B1638500FB429B /* HomeViewController.swift in Sources */,
+				A681DE8627B1638F00FB429B /* InstagramDetailsConverter.swift in Sources */,
+				A681DE7E27B1638F00FB429B /* InstagramIDPicturesProvider.swift in Sources */,
+				A681DE8427B1638F00FB429B /* YoutubeVODConverter.swift in Sources */,
+				A681DE6227B1638500FB429B /* StreamViewController.swift in Sources */,
+				A681DE7B27B1638F00FB429B /* YoutubeProvider.swift in Sources */,
+				A681DE6727B1638500FB429B /* VideoViewController.swift in Sources */,
+				A681DE6B27B1638500FB429B /* InstagramViewController.swift in Sources */,
+				A681DE7D27B1638F00FB429B /* APIKeys.swift in Sources */,
+				A681DE6527B1638500FB429B /* SongViewController.swift in Sources */,
+				A681DE8F27B1639700FB429B /* MyCollectionViewFlowLayout.swift in Sources */,
+				A681DE6827B1638500FB429B /* YoutubeTableViewCell.swift in Sources */,
 				A681DE4027B162F300FB429B /* AppDelegate.swift in Sources */,
 				A681DE4227B162F300FB429B /* SceneDelegate.swift in Sources */,
 			);
@@ -147,18 +403,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A681DE4527B162F300FB429B /* Main.storyboard */ = {
+		A681DE9927B163DB00FB429B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A681DE4627B162F300FB429B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A681DE4A27B162F500FB429B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A681DE4B27B162F500FB429B /* Base */,
+				A681DE9A27B163DB00FB429B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -284,6 +532,7 @@
 		};
 		A681DE5127B162F500FB429B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEAE0CD876734A87D51D08B9 /* Pods-Project12OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +541,10 @@
 				DEVELOPMENT_TEAM = T9TX49CS76;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project12OC/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = ContainerViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,12 +556,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A681DE5227B162F500FB429B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1459EE95E64AB4C319EECB68 /* Pods-Project12OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +571,10 @@
 				DEVELOPMENT_TEAM = T9TX49CS76;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Project12OC/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = ContainerViewController;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +586,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

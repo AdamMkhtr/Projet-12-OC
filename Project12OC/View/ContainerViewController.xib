@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContainerViewController" customModule="Project12OC" customModuleProvider="target">
+            <connections>
+                <outlet property="baseContainerView" destination="tRP-MV-jMq" id="UWP-BZ-nGM"/>
+                <outlet property="leadingMenuConstraint" destination="cX9-rn-1fs" id="LVv-6y-wjW"/>
+                <outlet property="menuView" destination="6cN-wS-w4X" id="okg-Nc-Fxj"/>
+                <outlet property="shadowView" destination="379-w4-xgo" id="C1w-Y8-2bX"/>
+                <outlet property="sideContainer" destination="eB8-nl-dxE" id="csR-yo-DUU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cN-wS-w4X" userLabel="menuContainer">
+                    <rect key="frame" x="0.0" y="44" width="414" height="138"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6cN-wS-w4X" secondAttribute="height" multiplier="6:2" id="3av-mZ-9iM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRP-MV-jMq" userLabel="baseContainer">
+                    <rect key="frame" x="0.0" y="182" width="414" height="680"/>
+                    <color key="backgroundColor" red="0.07869828492" green="0.098183073100000004" blue="0.1287542284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzX-cD-CuF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.16078431369999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view hidden="YES" alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="379-w4-xgo" userLabel="shadowView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Wro-SB-tKb" appends="YES" id="mt7-hy-bTA"/>
+                    </connections>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eB8-nl-dxE" userLabel="sideContainer">
+                    <rect key="frame" x="0.0" y="44" width="314" height="818"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.082467220719999998" green="0.097605608400000002" blue="0.1254942715" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="379-w4-xgo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AGP-q8-efL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eB8-nl-dxE" secondAttribute="bottom" id="CGq-d8-DGT"/>
+                <constraint firstItem="tRP-MV-jMq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="I1a-dS-TtR"/>
+                <constraint firstItem="6cN-wS-w4X" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Jlv-cT-fop"/>
+                <constraint firstItem="6cN-wS-w4X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RRj-1J-DuD"/>
+                <constraint firstItem="379-w4-xgo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UyZ-ON-Sg6"/>
+                <constraint firstItem="eB8-nl-dxE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="WSH-Dp-eZ4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eB8-nl-dxE" secondAttribute="trailing" constant="100" id="cX9-rn-1fs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tRP-MV-jMq" secondAttribute="bottom" id="duO-oP-bfu"/>
+                <constraint firstItem="vzX-cD-CuF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h74-xS-AMC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="379-w4-xgo" secondAttribute="trailing" id="itd-KN-4w3"/>
+                <constraint firstAttribute="trailing" secondItem="vzX-cD-CuF" secondAttribute="trailing" id="jqS-LH-koy"/>
+                <constraint firstItem="vzX-cD-CuF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="let-uU-Kxd"/>
+                <constraint firstItem="6cN-wS-w4X" firstAttribute="top" secondItem="vzX-cD-CuF" secondAttribute="bottom" id="nNp-O2-IEU"/>
+                <constraint firstItem="6cN-wS-w4X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="u3K-MQ-CJx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="379-w4-xgo" secondAttribute="bottom" id="v4z-hJ-elq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tRP-MV-jMq" secondAttribute="trailing" id="wUi-pX-MtN"/>
+                <constraint firstItem="eB8-nl-dxE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xdk-aA-9yO"/>
+                <constraint firstItem="tRP-MV-jMq" firstAttribute="top" secondItem="6cN-wS-w4X" secondAttribute="bottom" id="zFa-vR-I3z"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </view>
+        <tapGestureRecognizer cancelsTouchesInView="NO" id="Wro-SB-tKb">
+            <connections>
+                <action selector="dismissMenu:" destination="-1" id="f67-LT-U92"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

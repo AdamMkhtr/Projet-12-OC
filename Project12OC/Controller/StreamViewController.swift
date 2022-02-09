@@ -45,7 +45,6 @@ class StreamViewController: UIViewController {
     setupCornerRadius()
     setupGestureStream()
     calendarCollectionViewFlowLayout.minimumLineSpacing = 0
-    //   scrollToDayOfToday()
   }
   
   //----------------------------------------------------------------------------
@@ -155,12 +154,12 @@ class StreamViewController: UIViewController {
   ///  Check if the next stream is today or tomorow
   private var whatDate: TimeInterval {
     let todayDateStream =
-    Calendar.current.date(bySettingHour: 20, minute: 30, second: 0, of: Date())!
+    Calendar.current.date(bySettingHour: 17, minute: 00, second: 0, of: Date())!
     let today = Date()
     
     let tomorrow = Date.tomorrow
     let date =
-    Calendar.current.date(bySettingHour: 20, minute: 30, second: 0, of: tomorrow)!
+    Calendar.current.date(bySettingHour: 17, minute: 00, second: 0, of: tomorrow)!
     
     guard today < todayDateStream else {
       let intervalTomorrow = date.timeIntervalSinceNow - today.timeIntervalSinceNow

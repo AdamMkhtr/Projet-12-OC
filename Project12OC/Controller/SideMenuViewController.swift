@@ -102,7 +102,7 @@ class SideMenuViewController: UIViewController {
 
   /// Check if the the string is url and go to youtube app or website.
   @objc func tapYoutube() {
-    let urlYoutube = "https://www.youtube.com/user/L0ckl34r"
+    let urlYoutube = "https://www.youtube.com/c/Sididi"
     guard let url = URL(string: urlYoutube) else {
       print("error URL")
       return
@@ -112,7 +112,7 @@ class SideMenuViewController: UIViewController {
 
   /// Check if the the string is url and go to twitch app or website.
   @objc func tapTwitch() {
-    let urlTwitch = "https://www.twitch.tv/locklear"
+    let urlTwitch = "https://www.twitch.tv/sididi"
     guard let url = URL(string: urlTwitch) else {
       print("error URL")
       return
@@ -122,7 +122,7 @@ class SideMenuViewController: UIViewController {
 
   /// Check if the the string is url and go to twitter app or website.
   @objc func tapTwitter() {
-    let urlTwitter = "https://twitter.com/Lockl34r"
+    let urlTwitter = "https://twitter.com/My_Sididi"
     guard let url = URL(string: urlTwitter) else {
       print("error URL")
       return
@@ -132,7 +132,7 @@ class SideMenuViewController: UIViewController {
 
   /// Check if the the string is url and go to instagram app or website.
   @objc func tapInstagram() {
-    let urlInstagram = "https://www.instagram.com/esl_locklear/"
+    let urlInstagram = "https://www.instagram.com/sididiyt/"
     guard let url = URL(string: urlInstagram) else {
       print("error URL")
       return
@@ -142,7 +142,7 @@ class SideMenuViewController: UIViewController {
 
   /// Check if the the string is url and go to discord app or website.
   @objc func tapDiscord() {
-    let urlDiscord = "https://discord.com/invite/locklear"
+    let urlDiscord = "https://discord.gg/fGGEQqeG"
     guard let url = URL(string: urlDiscord) else {
       print("error URL")
       return
@@ -150,5 +150,3 @@ class SideMenuViewController: UIViewController {
     UIApplication.shared.open(url)
   }
 }
-
-//ici c'est un test

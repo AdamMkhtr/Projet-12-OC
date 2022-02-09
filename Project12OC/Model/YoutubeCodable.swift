@@ -48,16 +48,13 @@ enum ItemKind: String, Codable {
 
 // MARK: - Snippet
 struct Snippet: Codable {
-  //    let publishedAt: Date
   let channelID: ChannelID
   let title, snippetDescription: String
   let thumbnails: Thumbnails
   let channelTitle: ChannelTitle
   let liveBroadcastContent: LiveBroadcastContent
-  //    let publishTime: Date
-  
+
   enum CodingKeys: String, CodingKey {
-    //      case publishedAt
     case channelID = "channelId"
     case title
     case snippetDescription = "description"
@@ -66,15 +63,12 @@ struct Snippet: Codable {
 }
 
 enum ChannelID: String, Codable {
-  case uCvuACILbubOXVOMBWqLM2G = "UCvuACILbubOXV_OMBWqLM2g"
-  case ucMMCGgqHuLjZVsYzYYXVqw = "UCMmcGgqHuLjZVsYzYYX_Vqw"
-  case uc6I94IQq2QuSYcuvDqMXLA = "UC6I94iQq2Qu_sYcuvDqMxLA"
+  case UCsJ8cjkESfbZM8pAI0GBoNw = "UCsJ8cjkESfbZM8pAI0GBoNw"
 }
 
 enum ChannelTitle: String, Codable {
-  case locklear = "LOCKLEAR"
-  case locklearReplaysVODs = "Locklear Replays & VODs"
-  case locklearShorts = "LOCKLEAR SHORTS"
+  case Sididi = "Sididi"
+
 }
 
 enum LiveBroadcastContent: String, Codable {

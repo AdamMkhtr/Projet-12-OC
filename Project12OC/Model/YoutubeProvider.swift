@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class YoutubeProvider {
+class YoutubeProvider: YoutubeProviderProtocol {
   
   //----------------------------------------------------------------------------
   // MARK: - Error Management
@@ -50,7 +50,7 @@ class YoutubeProvider {
     let queryParameters: [String: Any] = [
       "order": "date",
       "part": "snippet",
-      "channelId": "UCvuACILbubOXV_OMBWqLM2g",
+      "channelId": "UCsJ8cjkESfbZM8pAI0GBoNw",
       "maxResults": "5",
       "pageToken": pageToken,
       "key": apiKey

@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3A041F7F3784DFAF28766B47 /* Pods_Project12OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A844C89C45AECDBDBC1B22A8 /* Pods_Project12OC.framework */; };
+		A63141BB27B467BD008C1C5D /* Project12OCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63141BA27B467BD008C1C5D /* Project12OCTests.swift */; };
+		A63141C227B46B17008C1C5D /* YoutubeProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63141C127B46B17008C1C5D /* YoutubeProviderTest.swift */; };
+		A63141C427B46B31008C1C5D /* YoutubeConverterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63141C327B46B31008C1C5D /* YoutubeConverterTest.swift */; };
+		A63141C627B46BD3008C1C5D /* YoutubeProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63141C527B46BD3008C1C5D /* YoutubeProviderProtocol.swift */; };
 		A681DE4027B162F300FB429B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE3F27B162F300FB429B /* AppDelegate.swift */; };
 		A681DE4227B162F300FB429B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE4127B162F300FB429B /* SceneDelegate.swift */; };
 		A681DE4927B162F500FB429B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A681DE4827B162F500FB429B /* Assets.xcassets */; };
 		A681DE6027B1638500FB429B /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5427B1638500FB429B /* SideMenuViewController.swift */; };
 		A681DE6127B1638500FB429B /* StreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5527B1638500FB429B /* StreamCollectionViewCell.swift */; };
 		A681DE6227B1638500FB429B /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5627B1638500FB429B /* StreamViewController.swift */; };
-		A681DE6327B1638500FB429B /* YoutubeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5727B1638500FB429B /* YoutubeHeaderView.swift */; };
 		A681DE6427B1638500FB429B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5827B1638500FB429B /* HomeViewController.swift */; };
 		A681DE6527B1638500FB429B /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5927B1638500FB429B /* SongViewController.swift */; };
 		A681DE6627B1638500FB429B /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE5A27B1638500FB429B /* ContainerViewController.swift */; };
@@ -26,19 +29,14 @@
 		A681DE7C27B1638F00FB429B /* YoutubeCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE6E27B1638F00FB429B /* YoutubeCodable.swift */; };
 		A681DE7D27B1638F00FB429B /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE6F27B1638F00FB429B /* APIKeys.swift */; };
 		A681DE7E27B1638F00FB429B /* InstagramIDPicturesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7027B1638F00FB429B /* InstagramIDPicturesProvider.swift */; };
-		A681DE7F27B1638F00FB429B /* YoutubeVODProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7127B1638F00FB429B /* YoutubeVODProvider.swift */; };
 		A681DE8027B1638F00FB429B /* InstagramCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7227B1638F00FB429B /* InstagramCodable.swift */; };
 		A681DE8127B1638F00FB429B /* InstagramDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7327B1638F00FB429B /* InstagramDelegateProtocol.swift */; };
-		A681DE8227B1638F00FB429B /* YoutubeShortProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7427B1638F00FB429B /* YoutubeShortProvider.swift */; };
 		A681DE8327B1638F00FB429B /* InstagramIDPicturesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7527B1638F00FB429B /* InstagramIDPicturesConverter.swift */; };
-		A681DE8427B1638F00FB429B /* YoutubeVODConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7627B1638F00FB429B /* YoutubeVODConverter.swift */; };
 		A681DE8527B1638F00FB429B /* InstagramDetailsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7727B1638F00FB429B /* InstagramDetailsProvider.swift */; };
 		A681DE8627B1638F00FB429B /* InstagramDetailsConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7827B1638F00FB429B /* InstagramDetailsConverter.swift */; };
 		A681DE8727B1639000FB429B /* YoutubeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7927B1638F00FB429B /* YoutubeConverter.swift */; };
-		A681DE8827B1639000FB429B /* YoutubeShortConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE7A27B1638F00FB429B /* YoutubeShortConverter.swift */; };
 		A681DE8D27B1639700FB429B /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE8A27B1639700FB429B /* UIImageView+Extensions.swift */; };
 		A681DE8E27B1639700FB429B /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE8B27B1639700FB429B /* Date+Extensions.swift */; };
-		A681DE8F27B1639700FB429B /* MyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A681DE8C27B1639700FB429B /* MyCollectionViewFlowLayout.swift */; };
 		A681DEA027B163DB00FB429B /* SongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9227B163DB00FB429B /* SongViewController.xib */; };
 		A681DEA127B163DB00FB429B /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9327B163DB00FB429B /* ContainerViewController.xib */; };
 		A681DEA227B163DB00FB429B /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9427B163DB00FB429B /* VideoViewController.xib */; };
@@ -53,8 +51,23 @@
 		A681DEAB27B163DB00FB429B /* StreamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A681DE9E27B163DB00FB429B /* StreamViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A63141BC27B467BD008C1C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A681DE3427B162F300FB429B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A681DE3B27B162F300FB429B;
+			remoteInfo = Project12OC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1459EE95E64AB4C319EECB68 /* Pods-Project12OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project12OC.release.xcconfig"; path = "Target Support Files/Pods-Project12OC/Pods-Project12OC.release.xcconfig"; sourceTree = "<group>"; };
+		A63141B827B467BD008C1C5D /* Project12OCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project12OCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63141BA27B467BD008C1C5D /* Project12OCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project12OCTests.swift; sourceTree = "<group>"; };
+		A63141C127B46B17008C1C5D /* YoutubeProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeProviderTest.swift; sourceTree = "<group>"; };
+		A63141C327B46B31008C1C5D /* YoutubeConverterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeConverterTest.swift; sourceTree = "<group>"; };
+		A63141C527B46BD3008C1C5D /* YoutubeProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeProviderProtocol.swift; sourceTree = "<group>"; };
 		A681DE3C27B162F300FB429B /* Project12OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project12OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A681DE3F27B162F300FB429B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A681DE4127B162F300FB429B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +76,6 @@
 		A681DE5427B1638500FB429B /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		A681DE5527B1638500FB429B /* StreamCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCollectionViewCell.swift; sourceTree = "<group>"; };
 		A681DE5627B1638500FB429B /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
-		A681DE5727B1638500FB429B /* YoutubeHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeHeaderView.swift; sourceTree = "<group>"; };
 		A681DE5827B1638500FB429B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A681DE5927B1638500FB429B /* SongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
 		A681DE5A27B1638500FB429B /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -75,19 +87,14 @@
 		A681DE6E27B1638F00FB429B /* YoutubeCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeCodable.swift; sourceTree = "<group>"; };
 		A681DE6F27B1638F00FB429B /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		A681DE7027B1638F00FB429B /* InstagramIDPicturesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramIDPicturesProvider.swift; sourceTree = "<group>"; };
-		A681DE7127B1638F00FB429B /* YoutubeVODProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVODProvider.swift; sourceTree = "<group>"; };
 		A681DE7227B1638F00FB429B /* InstagramCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramCodable.swift; sourceTree = "<group>"; };
 		A681DE7327B1638F00FB429B /* InstagramDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDelegateProtocol.swift; sourceTree = "<group>"; };
-		A681DE7427B1638F00FB429B /* YoutubeShortProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeShortProvider.swift; sourceTree = "<group>"; };
 		A681DE7527B1638F00FB429B /* InstagramIDPicturesConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramIDPicturesConverter.swift; sourceTree = "<group>"; };
-		A681DE7627B1638F00FB429B /* YoutubeVODConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeVODConverter.swift; sourceTree = "<group>"; };
 		A681DE7727B1638F00FB429B /* InstagramDetailsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDetailsProvider.swift; sourceTree = "<group>"; };
 		A681DE7827B1638F00FB429B /* InstagramDetailsConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramDetailsConverter.swift; sourceTree = "<group>"; };
 		A681DE7927B1638F00FB429B /* YoutubeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeConverter.swift; sourceTree = "<group>"; };
-		A681DE7A27B1638F00FB429B /* YoutubeShortConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeShortConverter.swift; sourceTree = "<group>"; };
 		A681DE8A27B1639700FB429B /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		A681DE8B27B1639700FB429B /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
-		A681DE8C27B1639700FB429B /* MyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		A681DE9227B163DB00FB429B /* SongViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongViewController.xib; sourceTree = "<group>"; };
 		A681DE9327B163DB00FB429B /* ContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
 		A681DE9427B163DB00FB429B /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
@@ -105,6 +112,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A63141B527B467BD008C1C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A681DE3927B162F300FB429B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,10 +139,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A63141B927B467BD008C1C5D /* Project12OCTests */ = {
+			isa = PBXGroup;
+			children = (
+				A63141BA27B467BD008C1C5D /* Project12OCTests.swift */,
+				A63141C127B46B17008C1C5D /* YoutubeProviderTest.swift */,
+				A63141C327B46B31008C1C5D /* YoutubeConverterTest.swift */,
+			);
+			path = Project12OCTests;
+			sourceTree = "<group>";
+		};
 		A681DE3327B162F300FB429B = {
 			isa = PBXGroup;
 			children = (
 				A681DE3E27B162F300FB429B /* Project12OC */,
+				A63141B927B467BD008C1C5D /* Project12OCTests */,
 				A681DE3D27B162F300FB429B /* Products */,
 				707171D8682128E97B65AB65 /* Pods */,
 				A7137AE007DE9AF473261DB5 /* Frameworks */,
@@ -139,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				A681DE3C27B162F300FB429B /* Project12OC.app */,
+				A63141B827B467BD008C1C5D /* Project12OCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,7 +188,6 @@
 				A681DE5427B1638500FB429B /* SideMenuViewController.swift */,
 				A681DE5527B1638500FB429B /* StreamCollectionViewCell.swift */,
 				A681DE5627B1638500FB429B /* StreamViewController.swift */,
-				A681DE5727B1638500FB429B /* YoutubeHeaderView.swift */,
 				A681DE5827B1638500FB429B /* HomeViewController.swift */,
 				A681DE5927B1638500FB429B /* SongViewController.swift */,
 				A681DE5A27B1638500FB429B /* ContainerViewController.swift */,
@@ -179,18 +204,15 @@
 			children = (
 				A681DE6D27B1638F00FB429B /* YoutubeProvider.swift */,
 				A681DE6E27B1638F00FB429B /* YoutubeCodable.swift */,
+				A681DE7927B1638F00FB429B /* YoutubeConverter.swift */,
+				A63141C527B46BD3008C1C5D /* YoutubeProviderProtocol.swift */,
 				A681DE6F27B1638F00FB429B /* APIKeys.swift */,
 				A681DE7027B1638F00FB429B /* InstagramIDPicturesProvider.swift */,
-				A681DE7127B1638F00FB429B /* YoutubeVODProvider.swift */,
 				A681DE7227B1638F00FB429B /* InstagramCodable.swift */,
 				A681DE7327B1638F00FB429B /* InstagramDelegateProtocol.swift */,
-				A681DE7427B1638F00FB429B /* YoutubeShortProvider.swift */,
 				A681DE7527B1638F00FB429B /* InstagramIDPicturesConverter.swift */,
-				A681DE7627B1638F00FB429B /* YoutubeVODConverter.swift */,
 				A681DE7727B1638F00FB429B /* InstagramDetailsProvider.swift */,
 				A681DE7827B1638F00FB429B /* InstagramDetailsConverter.swift */,
-				A681DE7927B1638F00FB429B /* YoutubeConverter.swift */,
-				A681DE7A27B1638F00FB429B /* YoutubeShortConverter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,7 +222,6 @@
 			children = (
 				A681DE8A27B1639700FB429B /* UIImageView+Extensions.swift */,
 				A681DE8B27B1639700FB429B /* Date+Extensions.swift */,
-				A681DE8C27B1639700FB429B /* MyCollectionViewFlowLayout.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -245,6 +266,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A63141B727B467BD008C1C5D /* Project12OCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A63141BE27B467BD008C1C5D /* Build configuration list for PBXNativeTarget "Project12OCTests" */;
+			buildPhases = (
+				A63141B427B467BD008C1C5D /* Sources */,
+				A63141B527B467BD008C1C5D /* Frameworks */,
+				A63141B627B467BD008C1C5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A63141BD27B467BD008C1C5D /* PBXTargetDependency */,
+			);
+			name = Project12OCTests;
+			productName = Project12OCTests;
+			productReference = A63141B827B467BD008C1C5D /* Project12OCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A681DE3B27B162F300FB429B /* Project12OC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A681DE5027B162F500FB429B /* Build configuration list for PBXNativeTarget "Project12OC" */;
@@ -274,6 +313,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					A63141B727B467BD008C1C5D = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A681DE3B27B162F300FB429B;
+					};
 					A681DE3B27B162F300FB429B = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -293,11 +336,19 @@
 			projectRoot = "";
 			targets = (
 				A681DE3B27B162F300FB429B /* Project12OC */,
+				A63141B727B467BD008C1C5D /* Project12OCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A63141B627B467BD008C1C5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A681DE3A27B162F300FB429B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,44 +414,57 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A63141B427B467BD008C1C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63141C427B46B31008C1C5D /* YoutubeConverterTest.swift in Sources */,
+				A63141C227B46B17008C1C5D /* YoutubeProviderTest.swift in Sources */,
+				A63141BB27B467BD008C1C5D /* Project12OCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A681DE3827B162F300FB429B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A681DE8D27B1639700FB429B /* UIImageView+Extensions.swift in Sources */,
-				A681DE7F27B1638F00FB429B /* YoutubeVODProvider.swift in Sources */,
 				A681DE8127B1638F00FB429B /* InstagramDelegateProtocol.swift in Sources */,
 				A681DE8527B1638F00FB429B /* InstagramDetailsProvider.swift in Sources */,
 				A681DE7C27B1638F00FB429B /* YoutubeCodable.swift in Sources */,
 				A681DE8327B1638F00FB429B /* InstagramIDPicturesConverter.swift in Sources */,
 				A681DE6027B1638500FB429B /* SideMenuViewController.swift in Sources */,
-				A681DE6327B1638500FB429B /* YoutubeHeaderView.swift in Sources */,
 				A681DE8027B1638F00FB429B /* InstagramCodable.swift in Sources */,
 				A681DE8E27B1639700FB429B /* Date+Extensions.swift in Sources */,
 				A681DE6627B1638500FB429B /* ContainerViewController.swift in Sources */,
 				A681DE6927B1638500FB429B /* InstagramTableViewCell.swift in Sources */,
 				A681DE8727B1639000FB429B /* YoutubeConverter.swift in Sources */,
-				A681DE8827B1639000FB429B /* YoutubeShortConverter.swift in Sources */,
-				A681DE8227B1638F00FB429B /* YoutubeShortProvider.swift in Sources */,
 				A681DE6127B1638500FB429B /* StreamCollectionViewCell.swift in Sources */,
 				A681DE6427B1638500FB429B /* HomeViewController.swift in Sources */,
 				A681DE8627B1638F00FB429B /* InstagramDetailsConverter.swift in Sources */,
 				A681DE7E27B1638F00FB429B /* InstagramIDPicturesProvider.swift in Sources */,
-				A681DE8427B1638F00FB429B /* YoutubeVODConverter.swift in Sources */,
 				A681DE6227B1638500FB429B /* StreamViewController.swift in Sources */,
 				A681DE7B27B1638F00FB429B /* YoutubeProvider.swift in Sources */,
 				A681DE6727B1638500FB429B /* VideoViewController.swift in Sources */,
 				A681DE6B27B1638500FB429B /* InstagramViewController.swift in Sources */,
 				A681DE7D27B1638F00FB429B /* APIKeys.swift in Sources */,
 				A681DE6527B1638500FB429B /* SongViewController.swift in Sources */,
-				A681DE8F27B1639700FB429B /* MyCollectionViewFlowLayout.swift in Sources */,
 				A681DE6827B1638500FB429B /* YoutubeTableViewCell.swift in Sources */,
 				A681DE4027B162F300FB429B /* AppDelegate.swift in Sources */,
 				A681DE4227B162F300FB429B /* SceneDelegate.swift in Sources */,
+				A63141C627B46BD3008C1C5D /* YoutubeProviderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A63141BD27B467BD008C1C5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A681DE3B27B162F300FB429B /* Project12OC */;
+			targetProxy = A63141BC27B467BD008C1C5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A681DE9927B163DB00FB429B /* LaunchScreen.storyboard */ = {
@@ -414,6 +478,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A63141BF27B467BD008C1C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9TX49CS76;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AdamMokhtar.Project12OCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project12OC.app/Project12OC";
+			};
+			name = Debug;
+		};
+		A63141C027B467BD008C1C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T9TX49CS76;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AdamMokhtar.Project12OCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project12OC.app/Project12OC";
+			};
+			name = Release;
+		};
 		A681DE4E27B162F500FB429B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -593,6 +693,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A63141BE27B467BD008C1C5D /* Build configuration list for PBXNativeTarget "Project12OCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63141BF27B467BD008C1C5D /* Debug */,
+				A63141C027B467BD008C1C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A681DE3727B162F300FB429B /* Build configuration list for PBXProject "Project12OC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

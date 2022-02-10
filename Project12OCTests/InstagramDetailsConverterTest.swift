@@ -32,8 +32,8 @@ class InstagramDetailsConverterTest: XCTestCase {
     converter.convert(idPicture: "") { [self] result in
       switch result {
 
-      case .success(_):
-        try? instagramDetailsResult = result.get()
+      case .success(let results):
+        XCTAssertEqual("test", results.mediaURL)
 
       case .failure(_): break
       }
@@ -41,8 +41,6 @@ class InstagramDetailsConverterTest: XCTestCase {
       expectation?.fulfill()
     }
     wait(for: [expectation!], timeout: 0.1)
-    XCTAssertNotNil(instagramDetailsResult)
-    XCTAssertEqual("test", instagramDetailsResult?.mediaURL)
   }
 
 }

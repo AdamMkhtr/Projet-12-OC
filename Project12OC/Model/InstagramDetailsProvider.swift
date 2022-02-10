@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class InstagramDetailsProvider {
+class InstagramDetailsProvider: InstagramDetailsProviderProtocol {
   
   enum InstagramDetailsProviderError: LocalizedError {
     case errorResponse

@@ -12,62 +12,58 @@ class YoutubeProviderMockTestConvert: YoutubeProviderProtocol {
 
 
   func fetchYoutubeVideos(pageToken: String, completion: @escaping ((Result<YoutubeCodable, Error>) -> Void)) {
-    let data = YoutubeCodable(kind: "", etag: "", nextPageToken: "", regionCode: "", pageInfo: nil, items: nil)
+    let page = PageInfo(totalResults: 1, resultsPerPage: 1)
 
-    let result =
+    let kind = ItemKind.youtubeSearchResult
+    let id = ID(kind: .youtubeVideo, videoID: "")
+    let channelID = ChannelID.UCsJ8cjkESfbZM8pAI0GBoNw
+    let def = Default(url: "", width: 1, height: 1)
+    let thum = Thumbnails(thumbnailsDefault: def, medium: def, high: def)
+    let channelTitle = ChannelTitle.Sididi
+    let liveBroadcastContent = LiveBroadcastContent.none
+    let snippet = Snippet(channelID: channelID, title: "", snippetDescription: "", thumbnails: thum, channelTitle: channelTitle, liveBroadcastContent: liveBroadcastContent)
+    let item = Item(kind: kind, etag: "test", id: id, snippet: snippet)
+
+
+
+
+
+    let result = YoutubeCodable(kind: "",
+                                etag: "",
+                                nextPageToken: "",
+                                regionCode: "",
+                                pageInfo: page,
+                                items: [item])
+
+    return completion(.success(result))
   }
-
-
-//  func fetchRecipes(
-//    querry: String,
-//    completion: @escaping ((Result<SearchResult, Error>) -> Void)
-//  ) {
-//    let recipe = Recipe(label: "test",
-//                        image: "",
-//                        url: "",
-//                        shareAs: "",
-//                        dietLabels: [""],
-//                        healthLabels: [""],
-//                        cautions: [""],
-//                        ingredientLines: [""])
-//
-//    let hit = Hit(recipe: recipe)
-//
-//    let result = SearchResult(q: "",
-//                              from: 0,
-//                              to: 1,
-//                              more: true,
-//                              count: 1,
-//                              hits: [hit])
-//
-//    return completion(.success(result))
-//  }
 }
 
-//class YoutubeConverterTest: XCTestCase {
-//
-//  var youtubeResult: [YoutubeCodable]?
-//  var expectation: XCTestExpectation?
-//
-//  func test_convert() {
-//    let converter = YoutubeConverter(youtubeProvider: YoutubeProviderMockTestConvert())
-//
-//    expectation = expectation(description: "Convert")
-//
-//    converter.convert(query: "test") { [self] result in
-//      switch result {
-//
-//      case .success(_):
-//        try? recipeResults = result.get()
-//
-//      case .failure(_): break
-//      }
-//
-//      expectation?.fulfill()
-//    }
-//    wait(for: [expectation!], timeout: 0.1)
-//    XCTAssertNotNil(youtubeResult)
-//    XCTAssertEqual("test", youtubeResult?.first?.label)
-//  }
-//
-//}
+
+class YoutubeConverterTest: XCTestCase {
+
+  var youtubeResults: [Item]?
+  var expectation: XCTestExpectation?
+
+  func test_convert() {
+    let converter = YoutubeConverter(youtubeProvider: YoutubeProviderMockTestConvert())
+
+    expectation = expectation(description: "Convert")
+
+    converter.convert(pageToken: "") { [self] result in
+      switch result {
+
+      case .success(_):
+        try? youtubeResults = result.get()
+
+      case .failure(_): break
+      }
+
+      expectation?.fulfill()
+    }
+    wait(for: [expectation!], timeout: 0.1)
+    XCTAssertNotNil(youtubeResults)
+    XCTAssertEqual("test", youtubeResults?.first?.etag)
+  }
+
+}

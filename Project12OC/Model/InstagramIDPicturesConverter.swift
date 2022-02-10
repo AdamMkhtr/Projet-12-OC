@@ -21,8 +21,12 @@ class InstagramIDPicturesConverter {
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
-  let instagramProvider = InstagramIDPicturesProvider()
+  let instagramProvider: InstagramIDPicturesProviderProtocol
   static private(set) var picturesID = [String]()
+
+  init(instagramProvider: InstagramIDPicturesProviderProtocol = InstagramIDPicturesProvider()) {
+    self.instagramProvider = instagramProvider
+  }
 
   //----------------------------------------------------------------------------
   // MARK: - Methods

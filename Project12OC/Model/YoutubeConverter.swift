@@ -21,9 +21,13 @@ class YoutubeConverter {
   // MARK: - Properties
   //----------------------------------------------------------------------------
   
-  let youtubeProvider = YoutubeProvider()
+  let youtubeProvider: YoutubeProviderProtocol
   var videoDetails = [Item]()
   var pageToken = ""
+
+  init(youtubeProvider: YoutubeProviderProtocol = YoutubeProvider()) {
+    self.youtubeProvider = youtubeProvider
+  }
   
   //----------------------------------------------------------------------------
   // MARK: - Methods

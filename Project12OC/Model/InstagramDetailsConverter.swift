@@ -21,11 +21,15 @@ class InstagramDetailsConverter {
   // MARK: - Properties
   //----------------------------------------------------------------------------
 
-  let instagramProvider = InstagramDetailsProvider()
+  let instagramProvider: InstagramDetailsProviderProtocol
   let instagramIDConverter = InstagramIDPicturesConverter()
   var idPictures = [String]()
   var delegate: InstagramDelegate?
   private(set) var detailsPictures = [DetailsPictures]()
+
+  init(instagramProvider: InstagramDetailsProviderProtocol = InstagramDetailsProvider()) {
+    self.instagramProvider = instagramProvider
+  }
 
   //----------------------------------------------------------------------------
   // MARK: - Methods

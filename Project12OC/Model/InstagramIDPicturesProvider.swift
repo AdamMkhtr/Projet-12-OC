@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class InstagramIDPicturesProvider {
+class InstagramIDPicturesProvider: InstagramIDPicturesProviderProtocol {
   
   //----------------------------------------------------------------------------
   // MARK: - Error Management

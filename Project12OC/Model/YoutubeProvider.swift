@@ -62,8 +62,6 @@ class YoutubeProvider: YoutubeProviderProtocol {
         completion(.failure(YoutubeProviderError.errorResponse))
         return
       }
-      print(response.response?.statusCode)
-      print(response.description)
       do {
         let youtubeJSON = try JSONDecoder().decode(YoutubeCodable.self, from: data)
         print(youtubeJSON)

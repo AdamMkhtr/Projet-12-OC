@@ -7,10 +7,6 @@
 
 import UIKit
 
-enum Day {
-  case monday
-  //..
-}
 class StreamCollectionViewCell: UICollectionViewCell {
 
   //----------------------------------------------------------------------------

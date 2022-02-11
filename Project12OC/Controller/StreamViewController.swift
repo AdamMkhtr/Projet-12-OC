@@ -219,7 +219,6 @@ extension StreamViewController : UICollectionViewDataSource {
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-#warning("ICI PROBLEME J'AI FAIS days.count * 10 ")
     return days.count
   }
   
@@ -269,47 +268,3 @@ extension StreamViewController : UICollectionViewDelegateFlowLayout {
                   height: collectionView.bounds.size.height)
   }
 }
-
-//    private func indexOfMajorCell() -> Int {
-//        let itemWidth = calendarCollectionView.bounds.size.width / 4 - 4
-//        let proportionalOffset = calendarCollectionViewFlowLayout.collectionView!.contentOffset.x / itemWidth
-//        let index = Int(round(proportionalOffset))
-//        let safeIndex = max(0, min(days.count - 1, index))
-//        return safeIndex
-//    }
-//
-//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-//        indexOfCellBeforeDragging = indexOfMajorCell()
-//    }
-//
-//    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-//        // Stop scrollView sliding:
-//        targetContentOffset.pointee = scrollView.contentOffset
-//
-//        // calculate where scrollView should snap to:
-//        let indexOfMajorCell = self.indexOfMajorCell()
-//
-//        // calculate conditions:
-//        let swipeVelocityThreshold: CGFloat = 0.4 // after some trail and error
-//        let hasEnoughVelocityToSlideToTheNextCell = indexOfCellBeforeDragging + 1 < days.count && velocity.x > swipeVelocityThreshold
-//        let hasEnoughVelocityToSlideToThePreviousCell = indexOfCellBeforeDragging - 1 >= 0 && velocity.x < -swipeVelocityThreshold
-//        let majorCellIsTheCellBeforeDragging = indexOfMajorCell == indexOfCellBeforeDragging
-//        let didUseSwipeToSkipCell = majorCellIsTheCellBeforeDragging && (hasEnoughVelocityToSlideToTheNextCell || hasEnoughVelocityToSlideToThePreviousCell)
-//
-//        if didUseSwipeToSkipCell {
-//
-//            let snapToIndex = indexOfCellBeforeDragging + (hasEnoughVelocityToSlideToTheNextCell ? 1 : -1)
-//            let toValue = calendarCollectionViewFlowLayout.itemSize.width * CGFloat(snapToIndex)
-//
-//            // Damping equal 1 => no oscillations => decay animation:
-//          UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: velocity.x, options: .allowUserInteraction, animations: {
-//                scrollView.contentOffset = CGPoint(x: toValue, y: 0)
-//                scrollView.layoutIfNeeded()
-//            }, completion: nil)
-//
-//        } else {
-//            // This is a much better way to scroll to a cell:
-//            let indexPath = IndexPath(row: indexOfMajorCell, section: 0)
-//          calendarCollectionViewFlowLayout.collectionView!.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-//        }
-//    }

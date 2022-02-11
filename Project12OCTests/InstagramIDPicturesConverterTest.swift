@@ -17,7 +17,6 @@ class InstagramIDPicturesProviderMockTestConvert: InstagramIDPicturesProviderPro
     let media = Media(data: [datum], paging: paging)
 
     let result = InstagramIDPictures(media: media, id: "test")
-//    let result = [resultOfCall.id]
 
     return completion(.success(result))
   }

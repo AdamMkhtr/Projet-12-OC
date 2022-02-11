@@ -27,7 +27,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="351" height="730"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9Xh-nq-JnT">
-                            <rect key="frame" x="0.0" y="0.0" width="351" height="526.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="351" height="702"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hob-5A-ESV">
                                     <rect key="frame" x="0.0" y="0.0" width="351" height="70"/>
@@ -47,22 +47,22 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYD-tA-b5g">
-                                    <rect key="frame" x="0.0" y="100" width="351" height="426.5"/>
+                                    <rect key="frame" x="0.0" y="100" width="351" height="602"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JOn-68-E45">
-                                            <rect key="frame" x="20" y="0.0" width="311" height="426.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="311" height="602"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prW-qK-Sz7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="81.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="116.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtube" translatesAutoresizingMaskIntoConstraints="NO" id="cpv-xD-7aD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="81.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="116.5" height="116.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="cpv-xD-7aD" secondAttribute="height" multiplier="1:1" id="ffj-5e-t1Q"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0u-gJ-896">
-                                                            <rect key="frame" x="81.5" y="0.0" width="229.5" height="81.5"/>
+                                                            <rect key="frame" x="116.5" y="0.0" width="194.5" height="116.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -80,16 +80,16 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMz-s6-jWp">
-                                                    <rect key="frame" x="0.0" y="86.5" width="311" height="81"/>
+                                                    <rect key="frame" x="0.0" y="121.5" width="311" height="116.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitch" translatesAutoresizingMaskIntoConstraints="NO" id="kno-2M-1AH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="81"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="116.5" height="116.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="kno-2M-1AH" secondAttribute="height" multiplier="1:1" id="mol-fI-aNV"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7i-dt-ZV8">
-                                                            <rect key="frame" x="81.5" y="0.0" width="229.5" height="81"/>
+                                                            <rect key="frame" x="116.5" y="0.0" width="194.5" height="116.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -107,16 +107,16 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzG-8J-YEs">
-                                                    <rect key="frame" x="0.0" y="172.5" width="311" height="81.5"/>
+                                                    <rect key="frame" x="0.0" y="243" width="311" height="116.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter-2" translatesAutoresizingMaskIntoConstraints="NO" id="PIo-MJ-hyB">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="81.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="116.5" height="116.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="PIo-MJ-hyB" secondAttribute="height" multiplier="1:1" id="58C-pL-FhU"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REj-HW-HvT">
-                                                            <rect key="frame" x="81.5" y="0.0" width="229.5" height="81.5"/>
+                                                            <rect key="frame" x="116.5" y="0.0" width="194.5" height="116.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -134,16 +134,16 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxl-Mc-7IE">
-                                                    <rect key="frame" x="0.0" y="259" width="311" height="81"/>
+                                                    <rect key="frame" x="0.0" y="364.5" width="311" height="116"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="6tY-wB-k7U">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="81"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="116.5" height="116"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="6tY-wB-k7U" secondAttribute="height" multiplier="1:1" id="kD3-Qu-5kZ"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQW-tU-CcX">
-                                                            <rect key="frame" x="81.5" y="0.0" width="229.5" height="81"/>
+                                                            <rect key="frame" x="116.5" y="0.0" width="194.5" height="116"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -161,16 +161,16 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaD-Lc-5lD">
-                                                    <rect key="frame" x="0.0" y="345" width="311" height="81.5"/>
+                                                    <rect key="frame" x="0.0" y="485.5" width="311" height="116.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discorde" translatesAutoresizingMaskIntoConstraints="NO" id="fTz-ZJ-vWx">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="81.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="116.5" height="116.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="fTz-ZJ-vWx" secondAttribute="height" multiplier="1:1" id="0p1-A0-5ht"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jp1-JA-eKx">
-                                                            <rect key="frame" x="81.5" y="0.0" width="229.5" height="81.5"/>
+                                                            <rect key="frame" x="116.5" y="0.0" width="194.5" height="116.5"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -199,7 +199,7 @@
                                 </view>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="width" secondItem="9Xh-nq-JnT" secondAttribute="height" multiplier="2:3" id="shR-JA-jYh"/>
+                                <constraint firstAttribute="width" secondItem="9Xh-nq-JnT" secondAttribute="height" multiplier="2:4" id="shR-JA-jYh"/>
                             </constraints>
                         </stackView>
                     </subviews>
